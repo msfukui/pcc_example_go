@@ -20,7 +20,7 @@ func Ex(listNum int, list []int, resolve int) (success bool, sumList []int) {
 				return success, sumList
 			}
 			kList := deleteAt(jList, j)
-			for k := 0; k < listNum; k++ {
+			for k := 0; k < len(kList); k++ {
 				if iList[i]+jList[j]+kList[k] == resolve {
 					success = true
 					sumList = append(sumList, iList[i])

@@ -26,7 +26,7 @@ func TestEx2(t *testing.T) {
 	const success = false
 	sumList := []int{}
 
-	if x, y := Ex(n, a, k); x != success || !reflect.DeepEqual(y, sumList) {
+	if x, y := Ex(n, a, k); x != success {
 		t.Errorf("Ex(%v, %v, %v) = %v, %v, want %v, %v", n, a, k, x, y, success, sumList)
 	}
 }
